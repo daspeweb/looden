@@ -1,0 +1,33 @@
+{
+    "name": "looden/framework",
+    "type": "library",
+    "description": "",
+    "authors": [
+        {
+            "name": "Guilherme Reis",
+            "email": "guilherme.reis@daspeweb.com.br"
+        }
+    ],
+    "autoload": {
+        "files": [
+//            "/src/Helpers/helpers.php"
+        ],
+        "psr-4": {
+            "Looden\\Framework\\": "/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Looden\\Framework\\LoodenFrameworkServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+//        "guzzlehttp/guzzle": "^6.3",
+//        "superbalist/laravel-google-cloud-storage": "2.*",
+//        "intervention/image": "2.4.*",
+//        "doctrine/dbal": "2.9"
+    }
+}
