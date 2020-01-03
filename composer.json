@@ -1,7 +1,7 @@
 {
-    "name": "looden/framework",
+    "name": "daspeweb/looden",
     "type": "library",
-    "description": "",
+    "description": "Laravel extension to increase developers productivity ",
     "authors": [
         {
             "name": "Guilherme Reis",
@@ -10,7 +10,6 @@
     ],
     "autoload": {
         "files": [
-//            "/src/Helpers/helpers.php"
         ],
         "psr-4": {
             "Looden\\Framework\\": "/"
@@ -25,9 +24,6 @@
     },
     "minimum-stability": "stable",
     "require": {
-//        "guzzlehttp/guzzle": "^6.3",
-//        "superbalist/laravel-google-cloud-storage": "2.*",
-//        "intervention/image": "2.4.*",
-//        "doctrine/dbal": "2.9"
+
     }
 }
