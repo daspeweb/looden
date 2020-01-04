@@ -9,11 +9,10 @@
         }
     ],
     "autoload": {
-        "files": [
-        ],
         "psr-4": {
             "Looden\\Framework\\": "/"
-        }
+        },
+        "exclude-from-classmap": ["Looden\\Framework\\Company"]
     },
     "extra": {
         "laravel": {
@@ -24,6 +23,6 @@
     },
     "minimum-stability": "stable",
     "require": {
-
+        "laravel/laravel": "5.6.*"
     }
 }
