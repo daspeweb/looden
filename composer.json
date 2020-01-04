@@ -22,6 +22,6 @@
     },
     "minimum-stability": "stable",
     "require": {
-      "laravel/laravel": "^5.*"
+      "laravel/laravel": "*"
     }
 }
