@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware(
     array_merge(
         config('looden.auth.api') ? ['auth:api', 'api'] : ['api'],
-        config('looden.auth.middlewares.api')
+        config('looden.auth.middlewares.api') ?: []
     ))->group(function (){
     Route::group(['prefix' => 'api'], function (){
         Route::get('describe/{model?}', '\Looden\Framework\Controller\APIController@describe');
@@ -27,8 +27,8 @@ Route::middleware(
 
 Route::middleware(    array_merge(
     config('looden.auth.web') ? ['web', 'auth'] : ['web'],
-    config('looden.auth.middlewares.web')
-    ))->group(function (){
+    config('looden.auth.middlewares.web') ?: []
+))->group(function (){
     Route::group(['prefix' => 'webapi'], function (){
         Route::get('describe/{model?}', '\Looden\Framework\Controller\APIController@describe');
         Route::get('{slug}/{id}/{field?}', '\Looden\Framework\Controller\APIController@show');
