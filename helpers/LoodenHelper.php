@@ -9,11 +9,13 @@ use Looden\Framework\App\LoodenModel;
 
 class LoodenHelper
 {
-    public static function getModelBySlug($slug){
+    public static function getModelBySlug($slug, $avoidException = false){
         $key = 'slug-'.$slug;
         $model = LoodenModel::whereSlug($slug)->first();
-        if (!$model){
+        if (!$model && !$avoidException){
             throw new \Exception('Model not found. Check the slug.');
+        }else if(!$model){
+            return null;
         }
         return Cache::get($key, app($model->namespace), 60*24);
     }

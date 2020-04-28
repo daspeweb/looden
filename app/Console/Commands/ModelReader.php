@@ -13,7 +13,6 @@ use Looden\Framework\App\LoodenModel;
 class ModelReader extends Command
 {
     protected $signature = 'looden:readmodels';
-    protected $description = 'Command description';
     public function __construct()
     {
         parent::__construct();
