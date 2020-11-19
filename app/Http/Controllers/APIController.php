@@ -1,6 +1,6 @@
 <?php
 
-namespace Looden\Framework\Controller;
+namespace Looden\Framework\Controllers;
 use App\Http\Controllers\Controller;
 use http\Env\Response;
 use Illuminate\Database\Eloquent\Collection;
